@@ -39,3 +39,27 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
 -----END CERTIFICATE-----"
 ```
 ## API Endpoints
+ - **Method**: `POST`
+ - **Request Body**:
+  ```json form-data
+{
+    "email": "bob@hillvalley.edu",
+    "phoneNumber": "897896"
+}
+ ```
+ - **Response Sample**:
+   
+
+```json
+{
+    "contact": {
+        "primaryContactId": 3,
+        "emails": [
+            "bob@hillvalley.edu"
+        ],
+        "phoneNumbers": [
+            "897896"
+        ],
+        "secondaryContactIds": []
+    }
+}
