@@ -150,7 +150,7 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
     "email": "bob@hillvalley.edu",
     "phoneNumber": "345678"
 }
-   ```
+  ```
 - **Response**:
    
 
