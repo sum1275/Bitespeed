@@ -63,3 +63,31 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
         "secondaryContactIds": []
     }
 }
+```
+## EDGE CASES
+1.Submit new email and phoneNumber
+ - **Request Body**:
+  ```json form-data
+{
+"email":"mcfly@hillval.edu",
+"phoneNumber":"123456"
+}
+```
+ - **Response **:
+   
+
+```json
+{
+    "contact": {
+        "primaryContactId": 1,
+        "emails": [
+            "mcfly@hillval.edu"
+        ],
+        "phoneNumbers": [
+            "123456"
+        ],
+        "secondaryContactIds": []
+    }
+}
+
+```
