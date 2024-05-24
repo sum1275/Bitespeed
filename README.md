@@ -146,10 +146,10 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
 4.Submit “existing secondary phone number” with new email, should make new record primary and adjust link id of existing secondary.
 - **Request Body**:
   ```json form-data
-{
+  {
     "email": "bob@hillvalley.edu",
     "phoneNumber": "345678"
-}
+   }
   ```
 - **Response**:
    
