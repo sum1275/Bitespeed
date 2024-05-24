@@ -9,8 +9,9 @@ To install Bitespeed Backend, follow these steps:
 1. Create a file named `.env` in the root directory of the project.
 2. Add the following content to the `.env` file:
 
-   ```plaintext
+```plaintext
 # Environment variables for development
+
 DEV_PORT=8084
 NODE_ENV=development
 DB_DEV_URL=postgres://<USERNAME>:<PASSWORD>@postgres-sumitsinha215-3ea3.k.aivencloud.com:16585/defaultdb
