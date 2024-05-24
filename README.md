@@ -5,6 +5,10 @@ To install Bitespeed Backend, follow these steps:
 1. Clone the repository:
    ```bash
    https://github.com/sum1275/Bitespeed.git
+## Instruction 
+   ```bash
+https://bitespeed.notion.site/Bitespeed-Backend-Task-Identity-Reconciliation-53392ab01fe149fab989422300423199
+```
 ## Database and Server Configuration for Development Environment
 1. Create a file named `.env` in the root directory of the project.
 2. Add the following content to the `.env` file:
