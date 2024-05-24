@@ -72,11 +72,11 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
 "email":"mcfly@hillval.edu",
 "phoneNumber":"123456"
 }
-```
- - **Response **:
+  ```
+- **Response**:
    
 
-```json
+```json form-data
 {
     "contact": {
         "primaryContactId": 1,
@@ -91,3 +91,82 @@ od2diKY5N6s4VSI7fDZEOopH3l51pWSeqAv/nocbN2arij9xEvkMGUtynveXxgd9
 }
 
 ```
+2.Submit “email” with new phone number, should become secondary with link id.
+ - **Request Body**:
+  ```json form-data
+{
+"email":"mcfly@hillval.edu",
+"phoneNumber":"234567"
+}
+  ```
+- **Response**:
+   
+
+```json form-data
+{
+    "contact": {
+        "primaryContactId": 1,
+        "emails": [
+            "mcfly@hillval.edu"
+        ],
+        "phoneNumbers": [
+            "123456"
+        ],
+        "secondaryContactIds": []
+    }
+}
+
+```
+3.Submit “email” with another new phone number, should become secondary with link id.
+ - **Request Body**:
+  ```json form-data
+{
+    "email": "mcfly@hillvalley.edu",
+    "phoneNumber": "345678"
+}
+  ```
+- **Response**:
+   
+
+```json form-data
+{
+    "contact": {
+        "primaryContactId": 2,
+        "emails": [
+            "mcfly@hillvalley.edu"
+        ],
+        "phoneNumbers": [
+            "345678"
+        ],
+        "secondaryContactIds": []
+    }
+}
+
+```
+4.Submit “existing secondary phone number” with new email, should make new record primary and adjust link id of existing secondary.
+- **Request Body**:
+  ```json form-data
+{
+    "email": "bob@hillvalley.edu",
+    "phoneNumber": "345678"
+}
+  ```
+- **Response**:
+   
+
+```json form-data
+{
+    "contact": {
+        "primaryContactId": 2,
+        "emails": [
+            "mcfly@hillvalley.edu"
+        ],
+        "phoneNumbers": [
+            "345678"
+        ],
+        "secondaryContactIds": []
+    }
+}
+
+```
+
